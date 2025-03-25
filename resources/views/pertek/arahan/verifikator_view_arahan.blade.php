@@ -287,7 +287,7 @@
                                                 <small class="text-muted d-block">Dokumen telah diverifikasi dan disetujui</small>
 
                                                 <!-- Message Section -->
-                                                <div class="mt-3 border-top pt-3">
+                                                {{-- <div class="mt-3 border-top pt-3">
                                                     <!-- Message History Container -->
                                                     <div class="message-history mb-3">
                                                         <div class="d-flex flex-column gap-3">
@@ -331,7 +331,7 @@
                                                             <iconify-icon icon="f7:paperplane" class="ms-1 text-white"></iconify-icon>
                                                         </button>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -458,9 +458,11 @@
                         <!-- Tab 4: Timeline -->
                         <div class="tab-pane fade" id="timeline" role="tabpanel" aria-labelledby="timeline-tab" tabindex="0">
                             <div class="section-card mb-8">
-                                <div class="section-header active">
-                                    <iconify-icon icon="material-symbols:timeline" class="section-icon"></iconify-icon>
-                                    <h6 class="text-md mb-0">Timeline Status Permohonan</h6>
+                                <div class="section-header active d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <iconify-icon icon="material-symbols:timeline" class="section-icon"></iconify-icon>
+                                        <h6 class="text-md mb-0">Timeline Status Permohonan</h6>
+                                    </div>
                                     <button class="btn btn-success">Simpan</button>
                                 </div>
                                 <div class="section-content p-3">
@@ -514,7 +516,8 @@
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <h6 class="mb-0">Perbaikan Dokumen 1</h6>
+                                                    <h6 class="mb-0">Pembuatan Surat Tanggapan
+                                                        Arahan Persetujuan Teknis</h6>
                                                     <select class="form-select form-select-sm status-select" style="width: auto;">
                                                         <option value="completed">Completed</option>
                                                         <option value="in-progress" selected>In Progress</option>
@@ -536,7 +539,8 @@
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <h6 class="mb-0">Perbaikan Dokumen 2</h6>
+                                                    <h6 class="mb-0">Penerbitan Surat Tanggapan
+                                                        Arahan Persetujuan Teknis</h6>
                                                     <select class="form-select form-select-sm status-select" style="width: auto;">
                                                         <option value="completed">Completed</option>
                                                         <option value="in-progress" selected>In Progress</option>
@@ -558,7 +562,8 @@
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <h6 class="mb-0">Perbaikan Dokumen 3</h6>
+                                                    <h6 class="mb-0">Pengajuan Permohonan
+                                                        Dokumen Persetujuan Teknis(Jakevo)</h6>
                                                     <select class="form-select form-select-sm status-select" style="width: auto;">
                                                         <option value="completed">Completed</option>
                                                         <option value="in-progress" selected>In Progress</option>
@@ -580,7 +585,9 @@
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <h6 class="mb-0">Penjadwalan Rapat/Sidang Pembahasan Dokumen Persetujuan Teknis</h6>
+                                                    <h6 class="mb-0">Verifikasi Administrasi
+                                                        berkas permohonan dokumen
+                                                        persetujuan teknis</h6>
                                                     <select class="form-select form-select-sm status-select" style="width: auto;">
                                                         <option value="completed">Completed</option>
                                                         <option value="in-progress">In Progress</option>
@@ -588,6 +595,29 @@
                                                         <option value="rejected">Rejected</option>
                                                     </select>
                                                 </div>
+                                                <div class="mb-2">
+                                                    <textarea class="form-control form-control-sm mb-2" placeholder="Tambahkan catatan..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item 7: Pending -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <h6 class="mb-0">Penjadwalan
+                                                        Rapat/Sidang Pembahasan
+                                                        Dokumen Persetujuan Teknis</h6>
+                                                    <select class="form-select form-select-sm status-select" style="width: auto;">
+                                                        <option value="completed">Completed</option>
+                                                        <option value="in-progress">In Progress</option>
+                                                        <option value="pending" selected>Pending</option>
+                                                        <option value="rejected">Rejected</option>
+                                                    </select>
+                                                </div>
+                                                <p class="text-muted small mb-1">-</p>
+
                                                 <div class="row mb-2">
                                                     <div class="col-md-6">
                                                         <label class="form-label text-sm mb-1">Tanggal Rapat</label>
@@ -604,32 +634,13 @@
                                             </div>
                                         </div>
 
-                                        <!-- Item 7: Pending -->
-                                        <div class="timeline-item">
-                                            <div class="timeline-marker"></div>
-                                            <div class="timeline-content">
-                                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <h6 class="mb-0">Rapat/Sidang Pembahasan Dokumen Persetujuan Teknis</h6>
-                                                    <select class="form-select form-select-sm status-select" style="width: auto;">
-                                                        <option value="completed">Completed</option>
-                                                        <option value="in-progress">In Progress</option>
-                                                        <option value="pending" selected>Pending</option>
-                                                        <option value="rejected">Rejected</option>
-                                                    </select>
-                                                </div>
-                                                <p class="text-muted small mb-1">-</p>
-                                                <div class="mb-2">
-                                                    <textarea class="form-control form-control-sm mb-2" placeholder="Tambahkan catatan..."></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                         <!-- Item 8: Pending -->
                                         <div class="timeline-item">
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <h6 class="mb-0">Perbaikan Dokumen Persetujuan Teknis Hasil Rapat/Sidang</h6>
+                                                    <h6 class="mb-0">Rapat/Sidang Pembahasan
+                                                        Dokumen Persetujuan Teknis</h6>
                                                     <select class="form-select form-select-sm status-select" style="width: auto;">
                                                         <option value="completed">Completed</option>
                                                         <option value="in-progress">In Progress</option>
@@ -650,7 +661,29 @@
                                             <div class="timeline-marker"></div>
                                             <div class="timeline-content">
                                                 <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <h6 class="mb-0">Penerbitan Rekomendasi Persetujuan Teknik</h6>
+                                                    <h6 class="mb-0">Perbaikan Dokumen
+                                                        persetujuan Teknis hasil dari
+                                                        rapat/sidang</h6>
+                                                    <select class="form-select form-select-sm status-select" style="width: auto;">
+                                                        <option value="completed">Completed</option>
+                                                        <option value="in-progress">In Progress</option>
+                                                        <option value="pending" selected>Pending</option>
+                                                        <option value="rejected">Rejected</option>
+                                                    </select>
+                                                </div>
+                                                <p class="text-muted small mb-1">-</p>
+                                                <div class="mb-2">
+                                                    <textarea class="form-control form-control-sm mb-2" placeholder="Tambahkan catatan..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Item 9: Pending -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content">
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <h6 class="mb-0">Penerbitan Rekomendasi Persetujuan Teknis</h6>
                                                     <select class="form-select form-select-sm status-select" style="width: auto;">
                                                         <option value="completed">Completed</option>
                                                         <option value="in-progress">In Progress</option>

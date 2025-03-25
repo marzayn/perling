@@ -561,7 +561,7 @@
                                                                     <small class="text-muted d-block">Maks. berukuran 20 MB dan berformat pdf</small>
 
                                                                      <!-- Message Section -->
-                                                                     <div class="mt-3 border-top pt-3">
+                                                                     {{-- <div class="mt-3 border-top pt-3">
                                                                         <!-- Message History Container -->
                                                                         <div class="message-history mb-3">
                                                                             <div class="d-flex flex-column gap-3">
@@ -604,7 +604,7 @@
 
                                                                             </button>
                                                                         </div>
-                                                                    </div>
+                                                                    </div> --}}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -684,7 +684,7 @@
                                                                     <!-- Message Section - Still active -->
                                                                     <div class="mt-3 border-top pt-3">
                                                                         <!-- Message History Container -->
-                                                                        <div class="message-history mb-3">
+                                                                        {{-- <div class="message-history mb-3">
                                                                             <div class="d-flex flex-column gap-3">
                                                                                 <!-- Admin Message -->
                                                                                 <div class="d-flex gap-2">
@@ -714,7 +714,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
+                                                                        </div> --}}
 
                                                                         <!-- Message Input - Still active -->
                                                                         <div class="d-flex gap-2">
