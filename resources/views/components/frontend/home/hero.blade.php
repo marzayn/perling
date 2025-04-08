@@ -5,7 +5,7 @@
     </div>
 
     <!-- Tagline -->
-    <div class="relative z-10 max-w-7xl mx-auto px-4 mt-20 md:mt-10">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 mt-20 md:mt-10" style="z-index: 0;>
         <div class="grid grid-cols-1 items-center">
             <div class="text-center space-y-6 animate-fade-in-up">
                 <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">

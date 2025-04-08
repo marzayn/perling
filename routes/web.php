@@ -10,7 +10,7 @@ use App\Http\Controllers\SuratArahanController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    return view('/frontend/home');
 });
 
 Route::get('/surat', [SuratArahanController::class, 'show']);

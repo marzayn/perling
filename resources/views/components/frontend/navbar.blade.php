@@ -32,8 +32,8 @@
                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                         </svg>
                     </a>
-                    <div class="absolute hidden group-hover:block bg-white rounded-xl shadow-2xl mt-0 pt-3 w-72 z-50 overflow-hidden
-                        animate-fade-in-down border border-blue-100">
+                    <div class="absolute hidden group-hover:block bg-white rounded-xl shadow-2xl mt-0 pt-3 w-72 z-[100] overflow-hidden
+                        animate-fade-in-down border border-blue-100" style="position: absolute; top: 100%;">
                         <div class="p-4 space-y-2">
                             <a href="#" class="px-4 py-3 text-gray-800 hover:bg-blue-50 rounded-lg transition-colors
                                 flex items-center space-x-3 group">
@@ -114,10 +114,10 @@
                 </div>
 
                 <!-- Login Button with enhanced style -->
-                <a href="#login" class="ml-4 bg-blue-500 text-white px-6 py-2.5 rounded-full
-                    hover:bg-blue-600 transition-all duration-300
-                    transform hover:-translate-y-1 hover:shadow-lg">
-                    MASUK
+                <a href="#login" class=" bg-lime-500  ml-4 relative overflow-hidden group text-white px-6 py-2.5 rounded-full
+               hover:shadow-lg">
+                    <span class="relative z-10">MASUK</span>
+                    <span class="absolute left-0 bottom-0 w-0 h-full bg-blue-600 group-hover:w-full transition-all duration-300"></span>
                 </a>
             </div>
 
