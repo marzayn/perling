@@ -1,4 +1,4 @@
-<div class="relative w-full overflow-hidden min-h-[800px] pt-2">
+<div class="relative w-full overflow-hidden min-h-[600px] md:min-h-[800px]">
     <!-- Background -->
     <div class="absolute inset-0 z-0">
         <img src="{{ asset('assets/images/home/bg-home.png') }}" alt="Hero Background" class="w-full h-full object-contain md:object-cover rounded-b-2xl">

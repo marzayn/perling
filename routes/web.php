@@ -13,6 +13,10 @@ Route::get('/', function () {
     return view('/frontend/home');
 });
 
+Route::get('/news', function () {
+    return view('/frontend/news');
+});
+
 Route::get('/surat', [SuratArahanController::class, 'show']);
 Route::post('/surat/save', [SuratArahanController::class, 'save'])->name('surat.save');
 Route::get('/surat/exportPDF', [SuratArahanController::class, 'exportPDF'])->name('surat.exportPDF');
