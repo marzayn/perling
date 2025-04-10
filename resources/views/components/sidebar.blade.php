@@ -53,11 +53,20 @@
                 </ul>
             </li>
 
-            <li>
-                <a href="#">
+            <li class="dropdown">
+                <a href="javascript:void(0)">
                   <iconify-icon icon="bi:card-text" class="menu-icon"></iconify-icon>
                   <span>Rincian Teknis</span>
                 </a>
+                 {{-- submenu --}}
+                 <ul class="sidebar-submenu">
+                    <li>
+                        <a href="{{ route('rintek.index_arahan') }}"><i class="text-primary-600 w-auto"></i>
+                        <iconify-icon icon="bi:list-task" class="menu-icon"></iconify-icon>
+                        <span>Permohonan Arahan</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
 
             <li class="dropdown">

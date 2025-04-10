@@ -114,7 +114,7 @@
                 </div>
 
                 <!-- Login Button with enhanced style -->
-                <a href="#login" class=" bg-lime-500  ml-4 relative overflow-hidden group text-white px-6 py-2.5 rounded-full
+                <a href="/auth/login" class=" bg-lime-500  ml-4 relative overflow-hidden group text-white px-6 py-2.5 rounded-full
                hover:shadow-lg">
                     <span class="relative z-10">MASUK</span>
                     <span class="absolute left-0 bottom-0 w-0 h-full bg-blue-600 group-hover:w-full transition-all duration-300"></span>

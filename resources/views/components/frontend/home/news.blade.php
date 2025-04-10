@@ -70,9 +70,6 @@
                          class="w-full h-full object-cover parallax-img transform transition-transform duration-1000">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                     </div>
-                    <div class="absolute top-4 left-4 flex items-center space-x-2">
-                        <span class="bg-gradient-to-r from-[#7ccf00]/80 to-[#7ccf00]/80 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium shadow-md">Environment</span>
-                    </div>
                 </div>
                 <div class="lg:w-2/5 xl:w-1/3 p-8 lg:p-12 flex flex-col justify-center relative lg:min-h-[500px]">
                     <div class="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-[#7ccf00] via-[#7ccf00] to-[#487fff] rounded-full hidden lg:block transform transition-transform duration-500 group-hover:scale-y-110"></div>
@@ -113,9 +110,6 @@
                     <img src="https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg" alt="News thumbnail"
                      class="w-full h-64 object-cover transform group-hover:scale-105 transition-all duration-700 ease-in-out">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-80"></div>
-                    <div class="absolute top-4 right-4 flex space-x-2">
-                    <span class="bg-gradient-to-r from-[#7ccf00]/80 to-[#7ccf00]/80 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium shadow-md">{{ ['Environment', 'Policy', 'Technology', 'Climate'][$i % 4] }}</span>
-                    </div>
                     <div class="absolute bottom-0 left-0 w-full p-5">
                     <div class="flex items-center space-x-2">
                         <span class="bg-black/40 backdrop-blur-sm text-white/90 px-3 py-1 rounded-full text-xs font-medium border border-white/10">{{ 11 - $i % 10 }} Desember 2024</span>
@@ -244,7 +238,7 @@
 
         <!-- Enhanced "See More" button with 3D effect -->
         <div class="flex justify-center mt-20">
-            <a href="#" class="inline-flex items-center px-8 py-3 bg-lime-500 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#487fff]/20 hover:-translate-y-1">
+            <a href="/news" class="inline-flex items-center px-8 py-3 bg-lime-500 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#487fff]/20 hover:-translate-y-1">
             <span>Lihat Selengkapnya</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7-7 7" />

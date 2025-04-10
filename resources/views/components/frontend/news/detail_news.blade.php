@@ -1,4 +1,4 @@
-<section class="relative bg-gray-100 font-sans" style="z-index: 10;">
+<section class="relative bg-gray-100 font-sans" style="z-index: 9;">
     <div class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white" >
         <div class="container mx-auto px-4 py-16 md:py-24">
             <div class="max-w-3xl mx-auto text-center">
@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <div class="container mx-auto px-4 py-12 mx-auto max-w-7xl">
+    <div class="container mx-auto px-4 py-12 max-w-7xl">
         <div class="flex flex-col lg:flex-row gap-8">
             <!-- Main Article (Kiri) -->
             <div class="w-full lg:w-2/3">
@@ -116,6 +116,21 @@
 
                         <!-- Article 2 -->
                         <div class="group transition-all duration-300 hover:translate-y-[-2px]">
+                            <div class="relative overflow-hidden rounded-lg mb-2">
+                                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+                                     alt="Masa Depan Transportasi"
+                                     class="w-full h-40 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h4 class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Masa Depan Transportasi</h4>
+                            <p class="text-gray-500 text-sm mt-1 mb-2 line-clamp-2">Dari mobil listrik hingga hyperloop, menjelajahi cara kita akan berpergian di masa depan.</p>
+                            <a href="#" class="text-blue-600 text-sm font-medium hover:text-blue-800 inline-flex items-center">
+                                Baca selengkapnya
+                                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </a>
+                        </div>
+
+                          <!-- Article 3 -->
+                          <div class="group transition-all duration-300 hover:translate-y-[-2px]">
                             <div class="relative overflow-hidden rounded-lg mb-2">
                                 <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
                                      alt="Masa Depan Transportasi"

@@ -2,7 +2,7 @@
 
 @section('content')
 
-@include('components.frontend.news.index_news')
+@include('components.frontend.news.detail_news')
 @include('components.frontend.footer')
 
 

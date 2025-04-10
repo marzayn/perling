@@ -2,7 +2,7 @@
 
 @section('content')
 
-{{-- @include('components.frontend.home.popup') --}}
+@include('components.frontend.home.popup')
 @include('components.frontend.home.hero')
 @include('components.frontend.home.layanan')
 @include('components.frontend.home.faq')
