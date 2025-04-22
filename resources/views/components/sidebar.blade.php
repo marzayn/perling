@@ -71,7 +71,7 @@
 
             <li>
                 <a href="{{ route('jadwal.index') }}">
-                  <iconify-icon icon="bi:card-text" class="menu-icon"></iconify-icon>
+                  <iconify-icon icon="bi:calendar-date" class="menu-icon"></iconify-icon>
                   <span>Penjadwalan</span>
                 </a>
             </li>
