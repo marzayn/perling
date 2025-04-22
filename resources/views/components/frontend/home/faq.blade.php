@@ -65,7 +65,7 @@
               <label for="documentNumber" class="block text-sm font-medium text-gray-700 mb-2">Nomor Registrasi Kegiatan</label>
               <div class="flex">
                 <input type="text" id="documentNumber" class="flex-grow px-4 py-2 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-blue-200 focus:border-custom-blue outline-none" placeholder="Masukkan Nomor Registrasi Kegiatan...">
-                <button class="bg-custom-blue text-white px-5 py-2 rounded-r-lg hover:bg-blue-800 transition">
+                <button class="bg-green-500 text-white px-5 py-2 rounded-r-lg hover:bg-blue-800 transition">
                   Track
                 </button>
               </div>

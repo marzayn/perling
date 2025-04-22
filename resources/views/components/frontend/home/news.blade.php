@@ -33,8 +33,8 @@
                 <div class="relative flex flex-row sm:flex-row p-1 sm:p-1.5 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl z-10 tab-glass-container">
                     <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#487fff]/20 to-purple-500/20 blur-xl transform scale-[0.96] z-0"></div>
                     <div class="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-[#487fff]/30 to-purple-500/30 blur opacity-50 transform animate-pulse-slow"></div>
-                    <button id="beritaTab" onclick="switchTab('berita')" class="relative group z-20 px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium transition-all duration-500 ease-out bg-gradient-to-r from-[#7ccf00]/80 to-[#7ccf00]/80 text-white rounded-xl m-1 hover:shadow-lg w-full sm:w-auto">
-                        <div class="absolute inset-0 bg-gradient-to-r from-[#7ccf00] to-[#7ccf00] rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 blur-xl -z-10"></div>
+                    <button id="beritaTab" onclick="switchTab('berita')" class="relative group z-20 px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium transition-all duration-500 ease-out bg-gradient-to-r from-[#00c950]/80 to-[#00c950]/80 text-white rounded-xl m-1 hover:shadow-lg w-full sm:w-auto">
+                        <div class="absolute inset-0 bg-gradient-to-r from-[#134402] to-[#00c950] rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 blur-xl -z-10"></div>
                         <div class="relative flex items-center justify-center space-x-2">
                             <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"></path>
@@ -53,7 +53,7 @@
                     </button>
                 </div>
                 <!-- Decorative element - hidden on small screens -->
-                <div class="absolute -right-4 -bottom-4 w-20 h-20 bg-gradient-to-br from-[#7ccf00]/30 to-[#487fff]/30 rounded-full blur-xl opacity-70 animate-pulse-slow hidden lg:block"></div>
+                <div class="absolute -right-4 -bottom-4 w-20 h-20 bg-gradient-to-br from-[#00c950]/30 to-[#487fff]/30 rounded-full blur-xl opacity-70 animate-pulse-slow hidden lg:block"></div>
             </div>
         </div>
 
@@ -64,7 +64,7 @@
             <div class="bg-gradient-to-br from-black/80 to-indigo-950/50 backdrop-blur-md border border-white/10 overflow-hidden rounded-2xl">
                 <div class="lg:flex">
                 <div class="lg:w-3/5 xl:w-2/3 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-[#7ccf00]/40 to-[#487fff]/40 mix-blend-overlay opacity-50"></div>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#00c950]/40 to-[#487fff]/40 mix-blend-overlay opacity-50"></div>
                     <div class="parallax-container h-[400px] lg:h-full overflow-hidden">
                     <img src="https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg" alt="Featured news"
                          class="w-full h-full object-cover parallax-img transform transition-transform duration-1000">
@@ -72,22 +72,22 @@
                     </div>
                 </div>
                 <div class="lg:w-2/5 xl:w-1/3 p-8 lg:p-12 flex flex-col justify-center relative lg:min-h-[500px]">
-                    <div class="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-[#7ccf00] via-[#7ccf00] to-[#487fff] rounded-full hidden lg:block transform transition-transform duration-500 group-hover:scale-y-110"></div>
+                    <div class="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-[#00c950] via-[#00c950] to-[#487fff] rounded-full hidden lg:block transform transition-transform duration-500 group-hover:scale-y-110"></div>
                     <div class="featured-content">
                     <div class="flex items-center space-x-2 mb-3">
-                        <svg class="w-5 h-5 text-[#7ccf00]" fill="currentColor" viewBox="0 0 20 20">
+                        <svg class="w-5 h-5 text-[#00c950]" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                         </svg>
-                        <span class="text-[#7ccf00] text-sm font-medium">11 Desember 2024</span>
+                        <span class="text-[#00c950] text-sm font-medium">11 Desember 2024</span>
                     </div>
-                    <h3 class="text-white font-black text-3xl my-4 leading-tight group-hover:text-[#7ccf00] transition-colors duration-300">
+                    <h3 class="text-white font-black text-3xl my-4 leading-tight group-hover:text-[#00c950] transition-colors duration-300">
                         Pengenalan dan Uji Coba Aplikasi Perling untuk Mendukung Sistem Persetujuan Lingkungan
                     </h3>
                     <p class="text-gray-300 mb-8 line-clamp-3 text-lg">
                         Bogor, 11 Desember 2024 - Dalam upaya meningkatkan efisiensi sistem persetujuan lingkungan di Indonesia, Kementerian Lingkungan Hidup dan Kehutanan telah meluncurkan aplikasi Perling yang inovatif...
                     </p>
                     <div>
-                        <a href="#" class="group inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#7ccf00] to-[#7ccf00] text-white text-sm font-medium rounded-lg overflow-hidden relative transition-all duration-300 hover:pr-9 hover:shadow-lg hover:shadow-[#7ccf00]/20">
+                        <a href="{{ route('news.index') }}" class="group inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#00c950] to-[#00c950] text-white text-sm font-medium rounded-lg overflow-hidden relative transition-all duration-300 hover:pr-9 hover:shadow-lg hover:shadow-[#00c950]/20">
                         <span>Baca Selengkapnya</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transform translate-x-0 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -105,7 +105,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             @for($i = 0; $i < 3; $i++)
             <div class="news-card group transform hover:-translate-y-1 transition-all duration-500 overflow-hidden">
-                <div class="h-full flex flex-col bg-gradient-to-br from-black/60 to-indigo-950/20 backdrop-filter backdrop-blur-md border border-white/10 rounded-2xl shadow-lg hover:shadow-[#7ccf00]/10 hover:border-[#7ccf00]/20 transition-all duration-300">
+                <div class="h-full flex flex-col bg-gradient-to-br from-black/60 to-indigo-950/20 backdrop-filter backdrop-blur-md border border-white/10 rounded-2xl shadow-lg hover:shadow-[#00c950]/10 hover:border-[#00c950]/20 transition-all duration-300">
                 <div class="relative overflow-hidden">
                     <img src="https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg" alt="News thumbnail"
                      class="w-full h-64 object-cover transform group-hover:scale-105 transition-all duration-700 ease-in-out">
@@ -114,7 +114,7 @@
                     <div class="flex items-center space-x-2">
                         <span class="bg-black/40 backdrop-blur-sm text-white/90 px-3 py-1 rounded-full text-xs font-medium border border-white/10">{{ 11 - $i % 10 }} Desember 2024</span>
                     </div>
-                    <h3 class="text-white font-bold text-xl mt-3 group-hover:text-[#7ccf00] transition-colors duration-300 line-clamp-2">{{ ['Implementasi Sistem Monitoring Lingkungan Terbaru', 'Kebijakan Pengelolaan Limbah untuk Industri', 'Teknologi Hijau untuk Smart City', 'Mitigasi Perubahan Iklim di Indonesia'][$i % 4] }}</h3>
+                    <h3 class="text-white font-bold text-xl mt-3 group-hover:text-[#00c950] transition-colors duration-300 line-clamp-2">{{ ['Implementasi Sistem Monitoring Lingkungan Terbaru', 'Kebijakan Pengelolaan Limbah untuk Industri', 'Teknologi Hijau untuk Smart City', 'Mitigasi Perubahan Iklim di Indonesia'][$i % 4] }}</h3>
                     </div>
                 </div>
                 <div class="p-5 pt-4 flex-grow flex flex-col">
@@ -124,7 +124,7 @@
                     'Smart city di Indonesia mulai mengadopsi teknologi hijau untuk mengurangi emisi karbon dan meningkatkan efisiensi energi dalam pengelolaan kota.',
                     'Program mitigasi perubahan iklim baru diluncurkan untuk mengurangi emisi gas rumah kaca dan mempersiapkan masyarakat menghadapi dampak perubahan iklim.'][$i % 4] }}
                     </p>
-                    <a href="#" class="inline-flex items-center text-[#7ccf00] hover:text-white font-medium text-sm transition-all duration-300 group-hover:translate-x-1 mt-auto">
+                    <a href="#" class="inline-flex items-center text-[#00c950] hover:text-white font-medium text-sm transition-all duration-300 group-hover:translate-x-1 mt-auto">
                     Baca selengkapnya
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -238,7 +238,7 @@
 
         <!-- Enhanced "See More" button with 3D effect -->
         <div class="flex justify-center mt-20">
-            <a href="/news" class="inline-flex items-center px-8 py-3 bg-lime-500 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#487fff]/20 hover:-translate-y-1">
+            <a href="/news" class="inline-flex items-center px-8 py-3 bg-green-500 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#487fff]/20 hover:-translate-y-1">
             <span>Lihat Selengkapnya</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 transform transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7-7 7" />
@@ -349,7 +349,7 @@
 
             if (tabName === 'berita') {
                 // Update tab styles
-                beritaTab.classList.add('bg-gradient-to-r', 'from-[#7ccf00]/80', 'to-[#7ccf00]/80', 'text-white');
+                beritaTab.classList.add('bg-gradient-to-r', 'from-[#00c950]/80', 'to-[#00c950]/80', 'text-white');
                 beritaTab.classList.remove('bg-white/5', 'text-white/80');
                 videoTab.classList.remove('bg-gradient-to-r', 'from-[#487fff]/80', 'to-[#487fff]/80', 'text-white');
                 videoTab.classList.add('bg-white/5', 'text-white/80');
@@ -371,7 +371,7 @@
             } else {
                 videoTab.classList.add('bg-gradient-to-r', 'from-[#487fff]/80', 'to-[#487fff]/80', 'text-white');
                 videoTab.classList.remove('bg-white/5', 'text-white/80');
-                beritaTab.classList.remove('bg-gradient-to-r', 'from-[#7ccf00]/80', 'to-[#7ccf00]/80', 'text-white');
+                beritaTab.classList.remove('bg-gradient-to-r', 'from-[#00c950]/80', 'to-[#00c950]/80', 'text-white');
                 beritaTab.classList.add('bg-white/5', 'text-white/80');
 
                 videoContent.style.transform = 'translateX(20px)';

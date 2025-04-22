@@ -9,6 +9,8 @@
       <!-- Filter Buttons and Search -->
     <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6">
         <div class="flex flex-wrap gap-2 w-full sm:w-auto">
+            <button id="tab-pertek" class="tab-btn bg-white border border-gray-300 px-3 sm:px-6 py-2 rounded text-sm sm:text-base" onclick="changeTab('pertek')">PERTEK</button>
+            <button id="tab-rintek" class="tab-btn bg-white border border-gray-300 px-3 sm:px-6 py-2 rounded text-sm sm:text-base" onclick="changeTab('rintek')">RINTEK</button>
             <button id="tab-amdal" class="tab-btn bg-white border border-gray-300 px-3 sm:px-6 py-2 rounded text-sm sm:text-base" onclick="changeTab('amdal')">AMDAL</button>
             <button id="tab-addendum" class="tab-btn bg-white border border-gray-300 px-3 sm:px-6 py-2 rounded text-sm sm:text-base" onclick="changeTab('addendum')">Addendum</button>
             <button id="tab-ukl-upl" class="tab-btn bg-white border border-gray-300 px-3 sm:px-6 py-2 rounded text-sm sm:text-base" onclick="changeTab('ukl-upl')">UKL - UPL</button>
@@ -34,22 +36,34 @@
 
     <!-- Filter dropdown section - positioned below the filters button -->
     <div id="filter-section" class="hidden w-full mb-6 bg-white border border-gray-200 rounded-md p-4 shadow-md">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-                <label for="provinsi" class="block text-sm font-medium text-gray-700 mb-1">Provinsi</label>
-                <select id="provinsi" name="provinsi" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
-                    <option value="">Semua Provinsi</option>
-                    <option value="aceh">Aceh</option>
-                    <option value="sumut">Sumatera Utara</option>
-                    <option value="sumbar">Sumatera Barat</option>
-                    <!-- Add more provinces as needed -->
-                </select>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
                 <label for="kabkota" class="block text-sm font-medium text-gray-700 mb-1">Kabupaten/Kota</label>
                 <select id="kabkota" name="kabkota" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
                     <option value="">Semua Kabupaten/Kota</option>
-                    <option value="aceh">Aceh</option>
+                    <option value="kepseribu">ADM. KEP. SERIBU</option>
+                    <option value="jakpus">KOTA ADM. JAKARTA PUSAT</option>
+                    <option value="jakut">KOTA ADM. JAKARTA UTARA</option>
+                    <option value="jakbar">KOTA ADM. JAKARTA BARAT</option>
+                    <option value="jaksel">KOTA ADM. JAKARTA SELATAN</option>
+                    <option value="jaktim">KOTA ADM. JAKARTA TIMUR</option>
+                </select>
+            </div>
+            <div>
+                <label for="kecamatan" class="block text-sm font-medium text-gray-700 mb-1">Kecamatan</label>
+                <select id="kecamatan" name="kecamatan" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Semua Kecamatan</option>
+                    <option value="kepseribuutara">KEPULAUAN SERIBU UTARA</option>
+                    <option value="kepseribuselatan">KEPULAUAN SERIBU SELATAN</option>
+                </select>
+            </div>
+            <div>
+                <label for="kelurahan" class="block text-sm font-medium text-gray-700 mb-1">Kelurahan</label>
+                <select id="kelurahan" name="kelurahan" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">Semua Kelurahan</option>
+                    <option value="kepseribuutara">PULAU PANGGANG</option>
+                    <option value="kepseribuselatan">PULAU KELAPA</option>
+                    <option value="kepseribuselatan">PULAU HARAPAN</option>
                 </select>
             </div>
         </div>
@@ -59,8 +73,8 @@
         </div>
         </div>
 
-      <!-- AMDAL Content -->
-      <div id="content-amdal" class="tab-content hidden bg-blue-900 rounded overflow-hidden">
+      <!-- Pertek Content -->
+      <div id="content-pertek" class="tab-content hidden bg-blue-900 rounded overflow-hidden">
         <!-- Announcement 1 -->
         <div class="border-b border-blue-800 p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div class="flex gap-3 sm:gap-4 w-full">
@@ -74,12 +88,12 @@
             <div>
               <h2 class="text-white font-bold text-sm sm:text-base">Kegiatan Penggalian Kuarsa/Pasir Kuarsa, LUKITO HARTONO LAWY</h2>
               <p class="text-blue-200 mt-1 sm:mt-2 text-xs sm:text-sm">Dampak Potensials: Penurunan Kualitas Udara, Peningkatan Kebisingan, Peningkatan Air Larian, Peningkatan Timbulan Sampah, Terjadinya Gangguan Lalu Lintas, Terbukanya Kes</p>
-              <a href="#" class="text-lime-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
+              <a href="#" class="text-green-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
             </div>
           </div>
           <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-end gap-2 w-full sm:w-auto mt-2 sm:mt-0">
             <div class="text-white text-xs sm:text-sm text-right">27 Maret - 10 April 2025</div>
-            <button class="bg-lime-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
+            <button class="bg-green-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
           </div>
         </div>
 
@@ -96,12 +110,106 @@
             <div>
               <h2 class="text-white font-bold text-sm sm:text-base">Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W</h2>
               <p class="text-blue-200 mt-1 sm:mt-2 text-xs sm:text-sm">Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis</p>
-              <a href="#" class="text-lime-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
+              <a href="#" class="text-green-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
             </div>
           </div>
           <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-end gap-2 w-full sm:w-auto mt-2 sm:mt-0">
             <div class="text-white text-xs sm:text-sm text-right">26 Maret - 9 April 2025</div>
-            <button class="bg-lime-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
+            <button class="bg-green-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
+          </div>
+        </div>
+      </div>
+
+       <!-- Rintek Content -->
+       <div id="content-rintek" class="tab-content hidden bg-blue-900 rounded overflow-hidden">
+        <!-- Announcement 1 -->
+        <div class="border-b border-blue-800 p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div class="flex gap-3 sm:gap-4 w-full">
+            <div class="flex-shrink-0">
+              <div class="bg-blue-500 p-2 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-white font-bold text-sm sm:text-base">Test Penggalian Kuarsa/Pasir Kuarsa, LUKITO HARTONO LAWY</h2>
+              <p class="text-blue-200 mt-1 sm:mt-2 text-xs sm:text-sm">Dampak Potensials: Penurunan Kualitas Udara, Peningkatan Kebisingan, Peningkatan Air Larian, Peningkatan Timbulan Sampah, Terjadinya Gangguan Lalu Lintas, Terbukanya Kes</p>
+              <a href="#" class="text-green-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
+            </div>
+          </div>
+          <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-end gap-2 w-full sm:w-auto mt-2 sm:mt-0">
+            <div class="text-white text-xs sm:text-sm text-right">27 Maret - 10 April 2025</div>
+            <button class="bg-green-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
+          </div>
+        </div>
+
+        <!-- Announcement 2 -->
+        <div class="border-b border-blue-800 p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div class="flex gap-3 sm:gap-4 w-full">
+            <div class="flex-shrink-0">
+              <div class="bg-blue-500 p-2 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-white font-bold text-sm sm:text-base">Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W</h2>
+              <p class="text-blue-200 mt-1 sm:mt-2 text-xs sm:text-sm">Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis</p>
+              <a href="#" class="text-green-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
+            </div>
+          </div>
+          <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-end gap-2 w-full sm:w-auto mt-2 sm:mt-0">
+            <div class="text-white text-xs sm:text-sm text-right">26 Maret - 9 April 2025</div>
+            <button class="bg-green-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- AMDAL Content -->
+      <div id="content-amdal" class="tab-content hidden bg-blue-900 rounded overflow-hidden">
+        <!-- Announcement 1 -->
+        <div class="border-b border-blue-800 p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div class="flex gap-3 sm:gap-4 w-full">
+            <div class="flex-shrink-0">
+              <div class="bg-blue-500 p-2 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-white font-bold text-sm sm:text-base">Kegiatan Penggalian Kuarsa/Pasir Kuarsa, LUKITO HARTONO LAWY</h2>
+              <p class="text-blue-200 mt-1 sm:mt-2 text-xs sm:text-sm">Dampak Potensials: Penurunan Kualitas Udara, Peningkatan Kebisingan, Peningkatan Air Larian, Peningkatan Timbulan Sampah, Terjadinya Gangguan Lalu Lintas, Terbukanya Kes</p>
+              <a href="#" class="text-green-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
+            </div>
+          </div>
+          <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-end gap-2 w-full sm:w-auto mt-2 sm:mt-0">
+            <div class="text-white text-xs sm:text-sm text-right">27 Maret - 10 April 2025</div>
+            <button class="bg-green-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
+          </div>
+        </div>
+
+        <!-- Announcement 2 -->
+        <div class="border-b border-blue-800 p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div class="flex gap-3 sm:gap-4 w-full">
+            <div class="flex-shrink-0">
+              <div class="bg-blue-500 p-2 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-white font-bold text-sm sm:text-base">Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W</h2>
+              <p class="text-blue-200 mt-1 sm:mt-2 text-xs sm:text-sm">Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis</p>
+              <a href="#" class="text-green-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
+            </div>
+          </div>
+          <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-end gap-2 w-full sm:w-auto mt-2 sm:mt-0">
+            <div class="text-white text-xs sm:text-sm text-right">26 Maret - 9 April 2025</div>
+            <button class="bg-green-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
           </div>
         </div>
       </div>
@@ -121,12 +229,12 @@
             <div>
               <h2 class="text-white font-bold text-sm sm:text-base">Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W</h2>
               <p class="text-blue-200 mt-1 sm:mt-2 text-xs sm:text-sm">Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis</p>
-              <a href="#" class="text-lime-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
+              <a href="#" class="text-green-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
             </div>
           </div>
           <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-end gap-2 w-full sm:w-auto mt-2 sm:mt-0">
             <div class="text-white text-xs sm:text-sm text-right">26 Maret - 9 April 2025</div>
-            <button class="bg-lime-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
+            <button class="bg-green-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
           </div>
         </div>
       </div>
@@ -145,12 +253,12 @@
             <div>
               <h2 class="text-white font-bold text-sm sm:text-base">Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W</h2>
               <p class="text-blue-200 mt-1 sm:mt-2 text-xs sm:text-sm">Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis</p>
-              <a href="#" class="text-lime-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
+              <a href="#" class="text-green-300 mt-1 block text-xs sm:text-sm">Baca selengkapnya ...</a>
             </div>
           </div>
           <div class="flex flex-row sm:flex-col items-center sm:items-end justify-between sm:justify-end gap-2 w-full sm:w-auto mt-2 sm:mt-0">
             <div class="text-white text-xs sm:text-sm text-right">26 Maret - 9 April 2025</div>
-            <button class="bg-lime-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
+            <button class="bg-green-500 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded text-xs sm:text-sm whitespace-nowrap">Berikan Tanggapan</button>
           </div>
         </div>
       </div>
@@ -179,7 +287,7 @@
                   </div>
                 </td>
                 <td class="py-3 sm:py-4 px-2 sm:px-4 align-top">
-                  <button class="bg-lime-500 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded w-full text-xs sm:text-sm">Download</button>
+                  <button class="bg-green-500 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded w-full text-xs sm:text-sm">Download</button>
                 </td>
               </tr>
             </tbody>
@@ -196,8 +304,9 @@
 
         document.getElementById('clear-filter').addEventListener('click', function() {
             // Reset province and city dropdowns
-            document.getElementById('provinsi').value = '';
             document.getElementById('kabkota').value = '';
+            document.getElementById('kecamatan').value = '';
+            document.getElementById('kelurahan').value = '';
 
             // Reset search input
             const searchInput = document.querySelector('input[placeholder="Search"]');
@@ -227,7 +336,7 @@
       }
 
       document.addEventListener('DOMContentLoaded', function() {
-        changeTab('amdal');
+        changeTab('pertek');
       });
     </script>
   </section>

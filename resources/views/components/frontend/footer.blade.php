@@ -1,6 +1,6 @@
 <body>
     <!-- Marquee Header -->
-    <div class="bg-lime-500 py-2 overflow-hidden relative">
+    <div class="bg-green-500 py-2 overflow-hidden relative">
         <div id="marquee-container" class="flex whitespace-nowrap">
             <div id="marquee-content" class="flex items-center space-x-6 mx-4">
                 <span>AMDAL</span>
@@ -63,7 +63,7 @@
     </script>
 
     <!-- Footer -->
-    <footer class="bg-black text-white pt-16 pb-8">
+    <footer class="bg-black text-white pt-16 pb-8 z-11 relative">
         <div class="container mx-auto px-4">
 
             <!-- Main Footer Content -->
@@ -141,8 +141,8 @@
                                     <p class="text-gray-400">Pengunjung Hari Ini</p>
                                     <p class="text-2xl font-bold text-white">{{ $todayVisitors ?? '128' }}</p>
                                 </div>
-                                <div class="bg-lime-500/20 p-3 rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-lime-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div class="bg-green-500/20 p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                     </svg>
                                 </div>
@@ -156,8 +156,8 @@
                                     <p class="text-gray-400">Pengunjung Sebulan Terakhir</p>
                                     <p class="text-2xl font-bold text-white">{{ $monthlyVisitors ?? '3,547' }}</p>
                                 </div>
-                                <div class="bg-lime-500/20 p-3 rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-lime-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div class="bg-green-500/20 p-3 rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                                     </svg>
                                 </div>
@@ -172,7 +172,7 @@
             <!-- Copyright -->
             <div class="flex justify-center items-center mx-auto text-center">
                 <div>
-                    Copyright © {{ date('Y') }} <span class="text-lime-400">Dinas Lingkungan Hidup Provinsi DKI Jakarta</span>. All Rights Reserved.
+                    Copyright © {{ date('Y') }} <span class="text-green-400">Dinas Lingkungan Hidup Provinsi DKI Jakarta</span>. All Rights Reserved.
                 </div>
             </div>
         </div>

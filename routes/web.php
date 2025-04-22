@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\JadwalSidangController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PenugasanController;
 use App\Http\Controllers\PerizinanLingkunganController;
 use App\Http\Controllers\PersetujuanTeknisController;
@@ -9,6 +11,10 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RincianTeknisController;
 use App\Http\Controllers\SuratArahanController;
 use Illuminate\Support\Facades\Route;
+
+Route::fallback(function () {
+    return response()->view('/frontend/404', [], 404);
+});
 
 Route::get('/', function () {
     return view('/frontend/home');
@@ -21,6 +27,9 @@ Route::get('/news/detail', function () {
 Route::get('/news', function () {
     return view('/frontend/news');
 });
+
+Route::get('/news', [NewsController::class, 'index'])->name('news.index');
+Route::get('/news/detail', [NewsController::class, 'detail'])->name('news.detail');
 
 Route::get('/surat', [SuratArahanController::class, 'show']);
 Route::post('/surat/save', [SuratArahanController::class, 'save'])->name('surat.save');
@@ -55,6 +64,12 @@ Route::prefix('admin')->group(function () {
     Route::get('/rintek/arahan', [RincianTeknisController::class, 'index_arahan'])->name('rintek.index_arahan');
     Route::get('/rintek/create-arahan', [RincianTeknisController::class, 'create_arahan'])->name('rintek.create_arahan');
     Route::get('/rintek/verifikator/arahan', [RincianTeknisController::class, 'verifikator_arahan'])->name('rintek.verifikator_arahan');
+});
+
+//rintek
+Route::prefix('admin')->group(function () {
+    Route::get('/jadwal', [JadwalSidangController::class, 'index'])->name('jadwal.index');
+    Route::get('/jadwal/create', [JadwalSidangController::class, 'create'])->name('jadwal.create');
 });
 
 // Penugasan

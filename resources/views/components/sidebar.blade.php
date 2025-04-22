@@ -69,6 +69,13 @@
                 </ul>
             </li>
 
+            <li>
+                <a href="{{ route('jadwal.index') }}">
+                  <iconify-icon icon="bi:card-text" class="menu-icon"></iconify-icon>
+                  <span>Penjadwalan</span>
+                </a>
+            </li>
+
             <li class="dropdown">
                 <a href="javascript:void(0)">
                   <iconify-icon icon="bi:list-task" class="menu-icon"></iconify-icon>
