@@ -1,0 +1,169 @@
+@keyframes gradient-x {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+.animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 3s ease infinite;
+}
+
+@keyframes pulse-slow {
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+.animate-pulse-slow {
+    animation: pulse-slow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+.animate-float {
+    animation: float 8s ease-in-out infinite;
+}
+.animate-float-slow {
+    animation: float 12s ease-in-out infinite;
+}
+.animate-float-slow-reverse {
+    animation: float 12s ease-in-out infinite reverse;
+}
+
+@keyframes float-text {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px) rotate(2deg);
+    }
+}
+.animate-float-text {
+    animation: float-text 2s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes subtle-rotate {
+    0%,
+    100% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+}
+.animate-subtle-rotate {
+    animation: subtle-rotate 12s ease-in-out infinite;
+}
+
+/* efek 3d */
+.perspective {
+    perspective: 1000px;
+}
+.perspective-hero {
+    perspective: 2000px;
+}
+.perspective-card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.transform-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.2, 0.85, 0.4, 1);
+}
+
+.glow-line {
+    box-shadow: 0 0 15px 2px rgba(124, 207, 0, 0.6);
+    animation: glow-pulse 3s ease-in-out infinite alternate;
+}
+@keyframes glow-pulse {
+    0% {
+        box-shadow: 0 0 10px 1px rgba(124, 207, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 25px 5px rgba(124, 207, 0, 0.8);
+    }
+}
+
+.ripple-effect {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(72, 127, 255, 0.4);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: ripple 2s linear infinite;
+}
+@keyframes ripple {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+    20% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+.masonry-card-wide {
+    grid-row: span 1;
+}
+@media (min-width: 1024px) {
+    .masonry-card:nth-child(4n + 1) {
+        grid-row: span 2;
+    }
+}
+
+#beritaContent,
+#videoContent {
+    transition: all 0.5s cubic-bezier(0.2, 0.85, 0.4, 1);
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.tab-glass-container {
+    position: relative;
+    z-index: 1;
+}
+.tab-glass-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: inherit;
+}

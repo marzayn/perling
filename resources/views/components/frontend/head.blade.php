@@ -1,14 +1,36 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title', 'Sistem Perizinan Lingkungan')</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Perizinan Lingkungan</title>
     <link rel="icon" type="image/ico"  href="{{ asset('favicon.ico') }}" sizes="16x16">
+
+     <!-- SEO Meta Tags -->
+     <meta name="description" content="@yield('description', 'Sistem Perizinan Lingkungan Dinas Lingkungan Hidup Provinsi DKI Jakarta')" />
+     <meta name="keywords" content="@yield('keywords', 'Sistem Perizinan Lingkungan, Dinas Lingkungan Hidup DKI Jakarta')" />
+     <meta name="author" content="Dinas Lingkungan Hidup Provinsi DKI Jakarta" />
+     <meta name="robots" content="index, follow" />
+
+     <!-- Open Graph Meta Tags -->
+     <meta property="og:title" content="@yield('ogTitle', 'Sistem Perizinan Lingkungan')" />
+    <meta property="og:description" content="@yield('ogDescription', 'Dinas Lingkungan Hidup Provinsi DKI Jakarta')" />
+    <meta property="og:image" content="{{ asset('assets/images/logo_color.svg') }}" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:type" content="website" />
+
+     <!-- Twitter Card Meta Tags -->
+     <meta name="twitter:card" content="summary_large_image" />
+     <meta name="twitter:title" content="@yield('twitterTitle', 'Sistem Perizinan Lingkungan')" />
+     <meta name="twitter:description" content="@yield('twitterDescription', 'Dinas Lingkungan Hidup Provinsi DKI Jakarta')" />
+     <meta name="twitter:image" content="{{ asset('assets/images/logo_color.svg') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    @stack('css')
 
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
     @vite(['resources/css/app.css', 'resources/js/app.js'])

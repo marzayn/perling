@@ -1,0 +1,6 @@
+.banner-slide {
+    transition: opacity 0.5s ease;
+}
+.dot-indicator.active {
+    background-color: #3182ce;
+}

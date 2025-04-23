@@ -1,0 +1,30 @@
+.custom-blue {
+    color: #003296;
+}
+.custom-blue-bg,
+.bg-custom-blue {
+    background-color: #003296;
+}
+.border-custom-blue {
+    border-color: #003296;
+}
+.faq-item {
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+.faq-item:hover,
+.faq-item.active {
+    border-left: 4px solid #003296;
+}
+.faq-item.active {
+    box-shadow: 0 10px 15px -3px rgba(0, 50, 150, 0.1);
+}
+@media (min-width: 768px) {
+    .faq-icon {
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+    }
+    .faq-item:hover .faq-icon {
+        transform: scale(1.1);
+    }
+}

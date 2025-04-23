@@ -1,10 +1,12 @@
-<div class="relative w-full overflow-hidden min-h-[600px] md:min-h-[800px]">
-    <!-- Background -->
+@push('css')
+    <link rel="stylesheet" href="{{ asset('assets/css/frontend/home/hero.css') }}">
+@endpush
+
+<section class="relative w-full overflow-hidden min-h-[600px] md:min-h-[800px]">
     <div class="absolute inset-0 z-0">
         <img src="{{ asset('assets/images/home/bg-home.png') }}" alt="Hero Background" class="w-full h-full object-contain md:object-cover rounded-b-2xl">
     </div>
 
-    <!-- Tagline -->
     <div class="relative z-10 max-w-7xl mx-auto px-4 mt-20 md:mt-10" style="z-index: 0;>
         <div class="grid grid-cols-1 items-center">
             <div class="text-center space-y-6 animate-fade-in-up">
@@ -18,21 +20,4 @@
         </div>
 
     </div>
-
-</div>
-
-<style>
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-    .animate-fade-in-up {
-        animation: fadeInUp 0.8s ease-out forwards;
-    }
-</style>
+</section>

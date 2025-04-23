@@ -1,3 +1,7 @@
+@push('script')
+    <script src="{{ asset('assets/js/frontend/navbar.js') }}"></script>
+@endpush
+
 <nav class="relative">
     <!-- Background Image Layer (Lowest z-index) -->
     <div class="absolute inset-y-0 w-full flex justify-center top-0 mt-6" style="z-index: 0;">
@@ -183,30 +187,3 @@
         </div>
     </div>
 </nav>
-
-<script>
-    // Mobile Menu Toggle
-    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-    const mobileMenuClose = document.getElementById('mobile-menu-close');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuToggle.addEventListener('click', () => {
-        mobileMenu.classList.remove('-translate-x-full');
-    });
-
-    mobileMenuClose.addEventListener('click', () => {
-        mobileMenu.classList.add('-translate-x-full');
-    });
-
-    // Mobile Submenu Toggle
-    const mobileSubmenuToggles = document.querySelectorAll('.mobile-submenu-toggle');
-    mobileSubmenuToggles.forEach(toggle => {
-        toggle.addEventListener('click', (e) => {
-            const submenu = e.currentTarget.nextElementSibling;
-            const svg = e.currentTarget.querySelector('svg');
-
-            submenu.classList.toggle('hidden');
-            svg.classList.toggle('rotate-180');
-        });
-    });
-</script>

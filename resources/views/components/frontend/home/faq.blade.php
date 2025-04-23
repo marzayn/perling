@@ -1,8 +1,15 @@
+@push('css')
+    <link rel="stylesheet" href="{{ asset('assets/css/frontend/home/faq.css') }}">
+@endpush
+
+@push('script')
+    <script src="{{ asset('assets/js/frontend/home/faq.js') }}"></script>
+@endpush
+
 <section class="bg-gradient-to-b from-gray-50 to-gray-100 font-sans py-6">
     <div class="container mx-auto max-w-7xl px-4">
 
       <div class="flex flex-col md:flex-row gap-8">
-        <!-- Left Column - FAQ -->
         <div>
           <h2 class="text-2xl font-bold custom-blue mb-4">Frequently Asked Questions</h2>
 
@@ -56,7 +63,6 @@
           </div>
         </div>
 
-        <!-- Right Column - Tracking Document -->
         <div>
           <div class="bg-white rounded-xl shadow-sm p-6 border-l-4 border-custom-blue">
             <h2 class="text-2xl font-bold custom-blue mb-6">Track Your Document</h2>
@@ -74,65 +80,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      document.querySelectorAll('.faq-header').forEach(header => {
-        header.addEventListener('click', () => {
-          const parent = header.parentElement;
-          const content = parent.querySelector('.faq-content');
-          const toggle = parent.querySelector('.faq-toggle svg');
-
-          // Close all other FAQs
-          document.querySelectorAll('.faq-item').forEach(item => {
-            if (item !== parent && item.classList.contains('active')) {
-              item.classList.remove('active');
-              item.querySelector('.faq-content').style.maxHeight = '0';
-              item.querySelector('.faq-toggle svg').classList.remove('rotate-45');
-            }
-          });
-
-          // Toggle current FAQ
-          parent.classList.toggle('active');
-
-          if (parent.classList.contains('active')) {
-            content.style.maxHeight = content.scrollHeight + "px";
-            toggle.classList.add('rotate-45');
-          } else {
-            content.style.maxHeight = '0';
-            toggle.classList.remove('rotate-45');
-          }
-        });
-      });
-    </script>
 </section>
 
-<style>
-  .custom-blue {
-    color: #003296;
-  }
-  .custom-blue-bg, .bg-custom-blue {
-    background-color: #003296;
-  }
-  .border-custom-blue {
-    border-color: #003296;
-  }
-  .faq-item {
-    border-left: 4px solid transparent;
-    transition: all 0.3s ease;
-  }
-  .faq-item:hover, .faq-item.active {
-    border-left: 4px solid #003296;
-  }
-  .faq-item.active {
-    box-shadow: 0 10px 15px -3px rgba(0, 50, 150, 0.1);
-  }
-  @media (min-width: 768px) {
-    .faq-icon {
-      transform: scale(0.9);
-      transition: transform 0.3s ease;
-    }
-    .faq-item:hover .faq-icon {
-      transform: scale(1.1);
-    }
-  }
-</style>

@@ -8,5 +8,9 @@
     @include('components.frontend.navbar')
     @yield('content')
 </main>
+
+@include('components.frontend.script')
+@stack('script')
+
 </body>
 </html>

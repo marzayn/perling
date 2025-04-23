@@ -4,6 +4,8 @@
 
 <x-head/>
 
+
+
 <link rel="stylesheet" href="{{ asset('assets/css/login/login.css') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
@@ -53,24 +55,21 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.querySelector('.password-toggle').addEventListener('click', function() {
-            const passwordInput = document.getElementById('password');
-            const icon = this.querySelector('i');
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                icon.className = 'bi bi-eye-slash';
-            } else {
-                passwordInput.type = 'password';
-                icon.className = 'bi bi-eye';
-            }
-        });
-    </script>
 </body>
 
 <x-script />
-
-</body>
+<script>
+    document.querySelector('.password-toggle').addEventListener('click', function() {
+        const passwordInput = document.getElementById('password');
+        const icon = this.querySelector('i');
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            icon.className = 'bi bi-eye-slash';
+        } else {
+            passwordInput.type = 'password';
+            icon.className = 'bi bi-eye';
+        }
+    });
+</script>
 
 </html>
