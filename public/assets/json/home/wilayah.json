@@ -1,0 +1,22 @@
+{
+    "kabkota": [
+        { "value": "", "label": "Semua Kabupaten/Kota" },
+        { "value": "kepseribu", "label": "ADM. KEP. SERIBU" },
+        { "value": "jakpus", "label": "KOTA ADM. JAKARTA PUSAT" },
+        { "value": "jakut", "label": "KOTA ADM. JAKARTA UTARA" },
+        { "value": "jakbar", "label": "KOTA ADM. JAKARTA BARAT" },
+        { "value": "jaksel", "label": "KOTA ADM. JAKARTA SELATAN" },
+        { "value": "jaktim", "label": "KOTA ADM. JAKARTA TIMUR" }
+    ],
+    "kecamatan": [
+        { "value": "", "label": "Semua Kecamatan" },
+        { "value": "kepseribuutara", "label": "KEPULAUAN SERIBU UTARA" },
+        { "value": "kepseribuselatan", "label": "KEPULAUAN SERIBU SELATAN" }
+    ],
+    "kelurahan": [
+        { "value": "", "label": "Semua Kelurahan" },
+        { "value": "pulau_panggung", "label": "PULAU PANGGANG" },
+        { "value": "pulau_kelapa", "label": "PULAU KELAPA" },
+        { "value": "pulau_harapan", "label": "PULAU HARAPAN" }
+    ]
+}

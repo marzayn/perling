@@ -1,8 +1,11 @@
 @extends('layout.layout')
 @php
-    $title='Permohonan Surat Arahan Persetujuan Teknis';
+    $title= 'Permohonan Surat Arahan Persetujuan Teknis';
     $subTitle = 'Permohonan Surat Arahan Persetujuan Teknis';
-    $css = '<link rel="stylesheet" href="' . asset('assets/css/custom.css') . '">';
+    $css = '
+    <link rel="stylesheet" href="' . asset('assets/css/pertek/user_arahan.css') . '">
+    <link rel="stylesheet" href="' . asset('assets/css/custom.css') . '">
+    ';
 @endphp
 
 @section('content')
@@ -521,46 +524,4 @@
                 </div>
     </div>
     </div>
-
-    <style>
-        .timeline-status {
-            position: relative;
-            padding-left: 28px;
-        }
-        .timeline-status:before {
-            content: '';
-            position: absolute;
-            left: 9px;
-            top: 6px;
-            height: calc(100% - 12px);
-            width: 2px;
-            background: #e9ecef;
-        }
-        .timeline-item {
-            position: relative;
-            padding-bottom: 20px;
-        }
-        .timeline-marker {
-            position: absolute;
-            left: -25px;
-            top: 6px;
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            background: #e9ecef;
-            border: 2px solid #fff;
-        }
-        .timeline-item.completed .timeline-marker {
-            background: #28a745;
-        }
-        .timeline-item.active .timeline-marker {
-            background: #007bff;
-            box-shadow: 0 0 0 4px rgba(0,123,255,0.2);
-        }
-        .timeline-content {
-            padding-left: 10px;
-        }
-
-
-    </style>
 @endsection

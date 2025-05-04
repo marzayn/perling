@@ -3,6 +3,7 @@
     $title='Permohonan Surat Arahan Persetujuan Teknis';
     $subTitle = 'Permohonan Surat Arahan Persetujuan Teknis';
     $css = '<link rel="stylesheet" href="' . asset('assets/css/custom.css') . '">';
+    $script = '<script src="' . asset('assets/js/dashboard/script_dropdown.js') . '"></script>';
 @endphp
 
 @section('content')
@@ -350,8 +351,9 @@
 </div>
 
 
-<script src="{{ asset('assets/js/dashboard/script_dropdown.js') }}"></script>
+{{-- <script src="{{ asset('assets/js/dashboard/script_dropdown.js') }}"></script> --}}
 
+<script>
     function toggleLimbahFields() {
         const selection = document.getElementById('hasilLimbahB3').value;
         const additionalFields = document.getElementById('limbahAdditionalFields');

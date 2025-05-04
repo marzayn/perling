@@ -10,11 +10,11 @@
 
 @section('content')
 
-@include('components.frontend.home.popup')
-@include('components.frontend.home.hero')
+@include('components.frontend.home.popup', ['popup' => $popup])
+@include('components.frontend.home.hero', ['heros' => $heros])
 @include('components.frontend.home.layanan')
-@include('components.frontend.home.faq')
-@include('components.frontend.home.news')
+@include('components.frontend.home.faq', ['faqs' => $faqs])
+@include('components.frontend.home.news', ['newsItems' => $newsItems, 'videoItems' => $videoItems])
 @include('components.frontend.footer')
 
 @endsection

@@ -14,3 +14,9 @@
 @include('components.frontend.footer')
 
 @endsection
+
+
+@push('script')
+<script src="{{ asset('assets/js/frontend/news/newsvideo.js') }}"></script>
+@endpush
+

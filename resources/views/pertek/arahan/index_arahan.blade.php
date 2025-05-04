@@ -24,7 +24,6 @@
                                 <tr>
                                     <th scope="col">
                                         <div class="form-check style-check d-flex align-items-center">
-                                            {{-- <input class="form-check-input" type="checkbox"> --}}
                                             <label class="form-check-label">
                                                 No
                                             </label>
@@ -44,7 +43,6 @@
                                 <tr>
                                     <td>
                                         <div class="form-check style-check d-flex align-items-center">
-                                            {{-- <input class="form-check-input" type="checkbox"> --}}
                                             <label class="form-check-label">
                                                 01
                                             </label>
@@ -53,7 +51,7 @@
                                     {{-- <td><a href="javascript:void(0)" class="text-primary-600" data-bs-toggle="modal" data-bs-target="#detailModal">K24/250319E5CC8C330</a></td> --}}
                                     <td>
                                         <a href="{{ route('pertek.verifikator_arahan') }}" class="text-primary-600">K24/Verifikator</a>
-                                        <a href="{{ route('pertek.user_arahan') }}" class="text-primary-600">K24/User</a>
+                                        <a href="{{ route('pertek.user_arahan') }}" class="text-primary-600 bg-amber-300 rounded-2xl">65D47C214422D</a>
                                     </td>
 
                                     @include('pertek.arahan.modal_detail_arahan')

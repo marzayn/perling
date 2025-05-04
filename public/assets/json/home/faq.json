@@ -1,0 +1,14 @@
+[
+    {
+        "question": "Bagaimana mekanisme penapisan dengan hasil jenis dokumen SPPL?",
+        "answer": "Proses penapisan dilakukan untuk menentukan jenis dokumen yang sesuai berdasarkan kegiatan yang diajukan. Jika hasil penapisan menunjukkan bahwa jenis dokumen yang diperlukan adalah SPPL (Surat Pernyataan Pengelolaan Lingkungan), pengguna dapat mengikuti panduan penggunaan (manual guide) SPPL yang tersedia."
+    },
+    {
+        "question": "Bagaimana cara Validator Administrasi melakukan uji administrasi?",
+        "answer": "Validator Administrasi memeriksa kesesuaian berkas administrasi dengan cara mengklik menu AMDAL atau UKL-UPL, memilih menu sebelum rapat, dan mengakses tab Uji Admin. Validator menentukan kelengkapan administrasi dengan memberikan keterangan di kolom yang sesuai."
+    },
+    {
+        "question": "Apa yang harus dilakukan jika dokumen tidak lengkap?",
+        "answer": "Jika dokumen tidak lengkap, Validator Administrasi dapat mengembalikan berkas kepada pengguna dengan memberikan keterangan yang jelas mengenai kekurangan dokumen tersebut. Pengguna kemudian dapat memperbaiki dan mengunggah kembali dokumen yang diperlukan."
+    }
+]

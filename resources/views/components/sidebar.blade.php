@@ -18,11 +18,18 @@
                 </a>
             </li>
 
-            <li class="sidebar-menu-group-title">Perizinan</li>
+            <li>
+                <a href="{{ route('jadwal.index') }}">
+                  <iconify-icon icon="bi:calendar-date" class="menu-icon"></iconify-icon>
+                  <span>Penjadwalan</span>
+                </a>
+            </li>
+
+            <li class="sidebar-menu-group-title">Persetujuan Teknis</li>
             <li class="dropdown">
                 <a href="javascript:void(0)">
                   <iconify-icon icon="bi:file-earmark-medical" class="menu-icon"></iconify-icon>
-                  <span>Persetujuan Teknis</span>
+                  <span>PERTEK</span>
                 </a>
                  {{-- submenu --}}
                  <ul class="sidebar-submenu">
@@ -30,6 +37,12 @@
                         <a href="{{ route('pertek.index_arahan') }}"><i class="text-primary-600 w-auto"></i>
                         <iconify-icon icon="bi:list-task" class="menu-icon"></iconify-icon>
                         <span>Permohonan Arahan</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('pertek.index_slo') }}"><i class="text-primary-600 w-auto"></i>
+                        <iconify-icon icon="bi:list-task" class="menu-icon"></iconify-icon>
+                        <span>Permohonan SLO</span>
                         </a>
                     </li>
                     <li>
@@ -53,10 +66,12 @@
                 </ul>
             </li>
 
+            <li class="sidebar-menu-group-title">Rincian Teknis</li>
+
             <li class="dropdown">
                 <a href="javascript:void(0)">
                   <iconify-icon icon="bi:card-text" class="menu-icon"></iconify-icon>
-                  <span>Rincian Teknis</span>
+                  <span>RINTEK</span>
                 </a>
                  {{-- submenu --}}
                  <ul class="sidebar-submenu">
@@ -69,192 +84,92 @@
                 </ul>
             </li>
 
+            <li class="sidebar-menu-group-title">Persetujuan Lingkungan</li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)">
+                  <iconify-icon icon="bi:card-text" class="menu-icon"></iconify-icon>
+                  <span>PERLING</span>
+                </a>
+                 {{-- submenu --}}
+                 <ul class="sidebar-submenu">
+                    <li>
+                        <a href="{{ route('persetujuan.kerangka.index') }}"><i class="text-primary-600 w-auto"></i>
+                           <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
+                           <span>Permohonan Kerangka Acuan</span>
+                         </a>
+                   </li>
+                   <li>
+                       <a href="{{ route ('persetujuan.amdal.index') }}"><i class="text-primary-600 w-auto"></i>
+                         <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
+                         <span>Amdal</span>
+                       </a>
+                   </li>
+                   <li>
+                   <a href="{{ route('persetujuan.rkl.index') }}"><i class="text-primary-600 w-auto"></i>
+                           <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
+                           <span>Andal RKL-RPL</span>
+                         </a>
+                   </li>
+                   <li>
+                         <a href="{{ route('persetujuan.ukl.index') }}"><i class="text-primary-600 w-auto"></i>
+                           <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
+                           <span>UKL-UPL</span>
+                         </a>
+                   </li>
+                   <li>
+                         <a href="{{ route('persetujuan.addendum.index') }}"><i class="text-primary-600 w-auto"></i>
+                           <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
+                           <span>ADDENDUM</span>
+                         </a>
+                       </li>
+                       <li>
+                         <a href="{{ route('persetujuan.delh.index') }}"><i class="text-primary-600 w-auto"></i>
+                           <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
+                           <span>DELH</span>
+                         </a>
+                       </li>
+                       <li>
+                         <a href="{{ route('persetujuan.dplh.index') }}"><i class="text-primary-600 w-auto"></i>
+                           <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
+                           <span>DPLH</span>
+                         </a>
+                       </li>
+                </ul>
+            </li>
+
+
+            <li class="sidebar-menu-group-title">Pengaturan</li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">
+                  <iconify-icon icon="bi:person-fill" class="menu-icon"></iconify-icon>
+                  <span>User</span>
+                </a>
+                {{-- submenu --}}
+                <ul class="sidebar-submenu">
+                    <li>
+                        <a href="#"><i class="text-primary-600 w-auto"></i>
+                        <iconify-icon icon="bi:person-fill" class="menu-icon"></iconify-icon>
+                        <span>Pengguna</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="text-primary-600 w-auto"></i>
+                            <iconify-icon icon="bi:person-gear" class="menu-icon"></iconify-icon>
+                            <span>Roles & Akses</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="sidebar-menu-group-title">Konten</li>
             <li>
-                <a href="{{ route('jadwal.index') }}">
-                  <iconify-icon icon="bi:calendar-date" class="menu-icon"></iconify-icon>
-                  <span>Penjadwalan</span>
-                </a>
-            </li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)">
-                  <iconify-icon icon="bi:list-task" class="menu-icon"></iconify-icon>
-                  <span>Penugasan</span>
-                </a>
-                {{-- submenu --}}
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="{{ route('penugasan.index') }}"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:list-task" class="menu-icon"></iconify-icon>
-                        <span>Semua Kegiatan</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                            <iconify-icon icon="bi:list-task" class="menu-icon"></iconify-icon>
-                            <span>Kegiatan Belum Ditugaskan</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:list-task" class="menu-icon"></iconify-icon>
-                        <span>Kegiatan Sudah Ditugaskan</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)">
-                  <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
-                  <span>Amdal</span>
-                </a>
-                {{-- submenu --}}
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
-                        <span>Semua Kegiatan</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                            <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
-                            <span>Sebelum Rapat</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:journal-text" class="menu-icon"></iconify-icon>
-                        <span>Sesudah Rapat</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)">
-                  <iconify-icon icon="bi:file-earmark-break" class="menu-icon"></iconify-icon>
-                  <span>UKL-UPL</span>
-                </a>
-                {{-- submenu --}}
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:file-earmark-break" class="menu-icon"></iconify-icon>
-                        <span>Semua Kegiatan</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                            <iconify-icon icon="bi:file-earmark-break" class="menu-icon"></iconify-icon>
-                            <span>Sebelum Rapat</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:file-earmark-break" class="menu-icon"></iconify-icon>
-                        <span>Sesudah Rapat</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)">
-                  <iconify-icon icon="bi:file-earmark-minus"" class="menu-icon"></iconify-icon>
-                  <span>SPPL</span>
-                </a>
-                {{-- submenu --}}
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:file-earmark-minus"" class="menu-icon"></iconify-icon>
-                        <span>Penapisan</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                            <iconify-icon icon="bi:file-earmark-minus"" class="menu-icon"></iconify-icon>
-                            <span>Terbit Otomatis</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-
-            <li class="dropdown">
-                <a href="javascript:void(0)">
-                  <iconify-icon icon="bi:file-earmark-post" class="menu-icon"></iconify-icon>
-                  <span>ADDENDUM</span>
-                </a>
-                {{-- submenu --}}
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:file-earmark-post" class="menu-icon"></iconify-icon>
-                        <span>Semua Kegiatan</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                            <iconify-icon icon="bi:file-earmark-post" class="menu-icon"></iconify-icon>
-                            <span>Sebelum Rapat</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:file-earmark-post" class="menu-icon"></iconify-icon>
-                        <span>Sesudah Rapat</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)">
-                  <iconify-icon icon="bi:activity" class="menu-icon"></iconify-icon>
-                  <span>Kegiatan</span>
-                </a>
-                {{-- submenu --}}
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:person-video" class="menu-icon"></iconify-icon>
-                        <span>Daftar Kegiatan</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                            <iconify-icon icon="bi:person-video" class="menu-icon"></iconify-icon>
-                            <span>Perubahan Dengan Dokumen</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="javascript:void(0)">
+                <a href="{{ route('news.index_newsvideo') }}">
                   <iconify-icon icon="bi:pencil-square" class="menu-icon"></iconify-icon>
-                  <span>Perubahan Persetujuan Lingkungan</span>
+                  <span>News & Video</span>
                 </a>
-                {{-- submenu --}}
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                        <iconify-icon icon="bi:pencil-square" class="menu-icon"></iconify-icon>
-                        <span>File Browser</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="text-primary-600 w-auto"></i>
-                            <iconify-icon icon="bi:pencil-square" class="menu-icon"></iconify-icon>
-                            <span>Data Pemrakarsa</span>
-                        </a>
-                    </li>
-                </ul>
             </li>
-
 
             <li class="sidebar-menu-group-title">Data Master</li>
 
@@ -293,12 +208,6 @@
                         <a href="#"><i class="text-primary-600 w-auto"></i>
                             <iconify-icon icon="bi:folder" class="menu-icon"></iconify-icon>
                             <span>Data Konsultan</span>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">
-                        <iconify-icon icon="bi:pencil-square" class="menu-icon"></iconify-icon>
-                        <span>Data TUK</span>
                         </a>
                     </li>
                 </ul>

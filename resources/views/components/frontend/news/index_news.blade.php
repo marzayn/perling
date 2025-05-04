@@ -1,252 +1,194 @@
-<section class="relative bg-gray-100 font-sans" style="z-index: 9;">
-    <div class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white" >
-        <div class="container mx-auto px-4 py-16 md:py-24">
+<section class="relative bg-gradient-to-b from-gray-50 to-white font-sans" style="z-index: 9;">
+    <div class="relative overflow-hidden bg-gradient-to-r from-blue-700 to-indigo-900 text-white">
+        <div class="absolute inset-0">
+            <svg class="absolute bottom-0 left-0 right-0 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="currentColor" fill-opacity="0.05" d="M0,192L48,202.7C96,213,192,235,288,229.3C384,224,480,192,576,181.3C672,171,768,181,864,197.3C960,213,1056,235,1152,229.3C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+            <svg class="absolute bottom-0 left-0 right-0 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="currentColor" fill-opacity="0.1" d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,186.7C672,192,768,192,864,181.3C960,171,1056,149,1152,149.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4 py-20 md:py-28 relative">
             <div class="max-w-3xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Berita & Updates</h1>
-                <p class="text-xl md:text-2xl opacity-90">Temukan informasi terbaru dan video menarik seputar Sistem Pengelolaan Dokumen Lingkungan dan kebijakan lingkungan hidup</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight">
+                    Berita & Updates
+                </h1>
+                <p class="text-xl md:text-2xl opacity-90 font-light leading-relaxed">Temukan informasi terbaru dan video menarik seputar Sistem Pengelolaan Dokumen Lingkungan dan kebijakan lingkungan hidup</p>
             </div>
         </div>
     </div>
+
     <div class="container mx-auto px-4 py-12 max-w-7xl">
-        <!-- News Articles Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="news-container">
-            <!-- Sample article 1 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Teknologi AI" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <div class="flex items-center mb-3">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">5 April 2025</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Kemajuan AI dalam Industri Kesehatan</h3>
-                    <p class="text-gray-600 mb-4">Bagaimana kecerdasan buatan merevolusi diagnosis dan perawatan dalam bidang medis...</p>
-                    <a href="{{ route('news.detail') }}" class="inline-flex items-center text-blue-600 hover:underline">
-                        Baca Selengkapnya
-                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Sample article 2 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Robotika" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <div class="flex items-center mb-3">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">2 April 2025</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Robot Asisten Rumah Tangga Masa Depan</h3>
-                    <p class="text-gray-600 mb-4">Perkembangan terbaru dalam robotika yang membantu pekerjaan rumah tangga sehari-hari...</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        Baca Selengkapnya
-                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Sample article 3 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Eksplorasi Luar Angkasa" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <div class="flex items-center mb-3">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">30 Maret 2025</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Misi Mars Pertama dengan Awak Manusia</h3>
-                    <p class="text-gray-600 mb-4">Persiapan dan tantangan untuk misi bersejarah pengiriman manusia ke planet merah...</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        Baca Selengkapnya
-                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Sample article 4 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Energi Terbarukan" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <div class="flex items-center mb-3">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">25 Maret 2025</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Terobosan Baru dalam Teknologi Panel Surya</h3>
-                    <p class="text-gray-600 mb-4">Efisiensi panel surya mencapai level tertinggi dengan material nano-photonic...</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        Baca Selengkapnya
-                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Sample article 5 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Komputasi Kuantum" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <div class="flex items-center mb-3">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">20 Maret 2025</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Komputer Kuantum Merevolusi Kriptografi</h3>
-                    <p class="text-gray-600 mb-4">Implikasi dari pengembangan komputer kuantum terhadap keamanan data global...</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        Baca Selengkapnya
-                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Sample article 6 -->
-            <div class="bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
-                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Bioteknologi" class="w-full h-48 object-cover">
-                <div class="p-5">
-                    <div class="flex items-center mb-3">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">15 Maret 2025</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">CRISPR Menjadi Pilihan Utama Terapi Gen</h3>
-                    <p class="text-gray-600 mb-4">Perkembangan terapi gen dengan teknologi CRISPR untuk mengobati penyakit genetik...</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        Baca Selengkapnya
-                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                        </svg>
-                    </a>
-                </div>
+        <div class="flex justify-center mb-10 relative">
+            <div class="bg-gray-100 rounded-full p-1.5 inline-flex shadow-md relative">
+                <button class="tab-btn text-lg px-6 py-2 rounded-full transition-all duration-300 relative z-10 font-medium" data-tab="news">Berita</button>
+                <button class="tab-btn text-lg px-6 py-2 rounded-full transition-all duration-300 relative z-10 text-gray-600" data-tab="videos">Video</button>
+                <div id="tab-indicator" class="absolute h-full top-0 rounded-full transition-all duration-300 bg-gradient-to-r from-blue-600 to-indigo-600 z-0"></div>
             </div>
         </div>
 
-        <!-- Load More Button -->
-        <div class="flex justify-center mt-10">
-            <button id="load-more-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center" data-page="1">
-                <span>Lihat Artikel Lainnya</span>
-                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+
+        <!-- News Section -->
+        <div class="tab-content" id="news-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="news-container">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                <div class="relative overflow-hidden">
+                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Perizinan Lingkungan" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute top-4 left-4">
+                    <span class="bg-blue-600 text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-md">5 April 2025</span>
+                </div>
+                </div>
+                <div class="p-6">
+                <h3 class="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">Perubahan Terbaru dalam Regulasi Perizinan Lingkungan</h3>
+                <p class="text-gray-600 mb-5 line-clamp-3">Informasi mengenai pembaruan kebijakan perizinan lingkungan dan bagaimana hal ini akan memengaruhi proses pengajuan izin untuk perusahaan di berbagai sektor industri...</p>
+                <a href="#" class="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">
+                    <span>Baca Selengkapnya</span>
+                    <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                <div class="relative overflow-hidden">
+                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Perizinan Lingkungan" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute top-4 left-4">
+                    <span class="bg-blue-600 text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-md">5 April 2025</span>
+                </div>
+                </div>
+                <div class="p-6">
+                <h3 class="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">Panduan Praktis Pengajuan AMDAL dan UKL-UPL</h3>
+                <p class="text-gray-600 mb-5 line-clamp-3">Tahapan dan persyaratan terkini dalam pengajuan dokumen AMDAL dan UKL-UPL yang perlu diperhatikan untuk mempercepat proses perizinan lingkungan...</p>
+                <a href="#" class="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">
+                    <span>Baca Selengkapnya</span>
+                    <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                <div class="relative overflow-hidden">
+                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="Perizinan Lingkungan" class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute top-4 left-4">
+                    <span class="bg-blue-600 text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-md">5 April 2025</span>
+                </div>
+                </div>
+                <div class="p-6">
+                <h3 class="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors">Digitalisasi Sistem Perizinan Lingkungan Nasional</h3>
+                <p class="text-gray-600 mb-5 line-clamp-3">Pemerintah meluncurkan platform digital terpadu untuk memudahkan proses pengajuan, pemantauan, dan perpanjangan izin lingkungan bagi pelaku usaha...</p>
+                <a href="#" class="inline-flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">
+                    <span>Baca Selengkapnya</span>
+                    <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="tab-content hidden" id="videos-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="video-container">
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                <div class="relative overflow-hidden">
+                <video class="w-full h-56 object-cover" poster="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" controls>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="bg-white/20 backdrop-blur-sm p-3 rounded-full">
+                    <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                    </svg>
+                    </div>
+                </div>
+                </div>
+                <div class="p-6">
+                <div class="flex items-center mb-3">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">5 April 2025</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-gray-800 group-hover:text-indigo-600 transition-colors">Panduan Praktis Perizinan Lingkungan Hidup</h3>
+                <p class="text-gray-600 mb-5 line-clamp-3">Langkah-langkah lengkap mengurus dokumen perizinan lingkungan sesuai dengan regulasi terbaru dan praktik terbaik...</p>
+                <a href="#" class="inline-flex items-center text-indigo-600 font-medium group-hover:text-indigo-800 transition-colors">
+                    <span>Tonton Video</span>
+                    <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                <div class="relative overflow-hidden">
+                <video class="w-full h-56 object-cover" poster="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" controls>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="bg-white/20 backdrop-blur-sm p-3 rounded-full">
+                    <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                    </svg>
+                    </div>
+                </div>
+                </div>
+                <div class="p-6">
+                <div class="flex items-center mb-3">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">5 April 2025</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-gray-800 group-hover:text-indigo-600 transition-colors">Tutorial Penyusunan Dokumen AMDAL yang Benar</h3>
+                <p class="text-gray-600 mb-5 line-clamp-3">Penjelasan detail tentang cara menyusun dokumen AMDAL yang memenuhi standar dan persyaratan dari Kementerian Lingkungan Hidup...</p>
+                <a href="#" class="inline-flex items-center text-indigo-600 font-medium group-hover:text-indigo-800 transition-colors">
+                    <span>Tonton Video</span>
+                    <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
+                <div class="relative overflow-hidden">
+                <video class="w-full h-56 object-cover" poster="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" controls>
+                    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="bg-white/20 backdrop-blur-sm p-3 rounded-full">
+                    <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                    </svg>
+                    </div>
+                </div>
+                </div>
+                <div class="p-6">
+                <div class="flex items-center mb-3">
+                    <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">5 April 2025</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 text-gray-800 group-hover:text-indigo-600 transition-colors">Sistem Online Perizinan Lingkungan Terpadu</h3>
+                <p class="text-gray-600 mb-5 line-clamp-3">Demo penggunaan platform digital terbaru untuk mengajukan, melacak, dan memperbarui dokumen perizinan lingkungan secara efisien...</p>
+                <a href="#" class="inline-flex items-center text-indigo-600 font-medium group-hover:text-indigo-800 transition-colors">
+                    <span>Tonton Video</span>
+                    <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-12">
+            <button id="load-more-btn" class="group bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold py-3.5 px-10 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg flex items-center">
+                <span>Lihat Lainnya</span>
+                <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
             </button>
         </div>
-
-        <!-- JavaScript for Load More functionality -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const loadMoreBtn = document.getElementById('load-more-btn');
-                const newsContainer = document.getElementById('news-container');
-
-                // Sample data for demonstration
-                const moreArticles = [
-                    {
-                        image: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-                        published_date: "10 Maret 2025",
-                        title: "Virtual Reality untuk Pendidikan Jarak Jauh",
-                        excerpt: "Bagaimana teknologi VR mengubah cara kita belajar dan mengajar dalam era digital",
-                        slug: "virtual-reality-pendidikan"
-                    },
-                    {
-                        image: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-                        published_date: "5 Maret 2025",
-                        title: "Mobil Terbang Mulai Uji Coba di Perkotaan",
-                        excerpt: "Prototipe mobil terbang memasuki fase uji coba di lingkungan perkotaan untuk pertama kalinya",
-                        slug: "mobil-terbang-uji-coba"
-                    },
-                    {
-                        image: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-                        published_date: "1 Maret 2025",
-                        title: "Interface Otak-Komputer Generasi Baru",
-                        excerpt: "Perangkat non-invasif baru memungkinkan kendali komputer hanya dengan pikiran",
-                        slug: "brain-computer-interface"
-                    },
-                    {
-                        image: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-                        published_date: "25 Februari 2025",
-                        title: "Daging Kultur Laboratorium Memasuki Pasar Global",
-                        excerpt: "Produksi daging dalam laboratorium mencapai skala komersial dan mulai tersedia untuk konsumen",
-                        slug: "daging-laboratorium"
-                    },
-                    {
-                        image: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-                        published_date: "20 Februari 2025",
-                        title: "Drone Pengirim Bantuan Medis di Daerah Terpencil",
-                        excerpt: "Jaringan drone otonom menyediakan layanan medis darurat ke wilayah yang sulit dijangkau",
-                        slug: "drone-medis"
-                    },
-                    {
-                        image: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-                        published_date: "15 Februari 2025",
-                        title: "Material Super-Konduktor Bekerja pada Suhu Ruangan",
-                        excerpt: "Penemuan material super-konduktor yang bekerja pada suhu kamar membuka peluang untuk revolusi energi",
-                        slug: "super-konduktor"
-                    }
-                ];
-
-                let currentPage = 1;
-                const totalPages = 3;
-
-                loadMoreBtn.addEventListener('click', function() {
-                    currentPage++;
-                    const loadingText = loadMoreBtn.innerHTML;
-
-                    // Show loading state
-                    loadMoreBtn.innerHTML = `
-                        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        Loading...
-                    `;
-
-                    // Simulate AJAX request with setTimeout
-                    setTimeout(() => {
-                        if (currentPage <= totalPages) {
-                            // For demo, we'll just use our sample data
-                            moreArticles.forEach(article => {
-                                const articleElement = createArticleElement(article);
-                                newsContainer.appendChild(articleElement);
-                            });
-
-                            // If reached the last page, hide the button
-                            if (currentPage === totalPages) {
-                                loadMoreBtn.style.display = 'none';
-                            } else {
-                                loadMoreBtn.innerHTML = loadingText;
-                            }
-                        } else {
-                            // No more articles
-                            loadMoreBtn.innerHTML = 'Tidak ada artikel lagi';
-                            loadMoreBtn.disabled = true;
-                            loadMoreBtn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
-                            loadMoreBtn.classList.add('bg-gray-400', 'cursor-not-allowed');
-                        }
-                    }, 1000);
-                });
-
-                // Helper function to create an article element
-                function createArticleElement(article) {
-                    const div = document.createElement('div');
-                    div.className = 'bg-white rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg hover:-translate-y-1';
-
-                    div.innerHTML = `
-                        <img src="${article.image}" alt="${article.title}" class="w-full h-48 object-cover">
-                        <div class="p-5">
-                            <div class="flex items-center mb-3">
-                                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">${article.published_date}</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">${article.title}</h3>
-                            <p class="text-gray-600 mb-4">${article.excerpt}</p>
-                            <a href="/news/${article.slug}" class="inline-flex items-center text-blue-600 hover:underline">
-                                Baca Selengkapnya
-                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                                </svg>
-                            </a>
-                        </div>
-                    `;
-
-                    return div;
-                }
-            });
-        </script>
     </div>
 </section>

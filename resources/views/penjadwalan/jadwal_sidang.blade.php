@@ -279,14 +279,35 @@
                                                 <input class="form-check-input" type="radio" name="label" id="Family">
                                                 <label class="form-check-label line-height-1 fw-medium text-secondary-light text-sm d-flex align-items-center gap-1" for="Family">
                                                     <span class="w-8-px h-8-px bg-warning-600 rounded-circle"></span>
-                                                    Amdal
+                                                    Andal RKL-RPL
+                                                </label>
+                                            </div>
+                                            <div class="form-check checked-secondary d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="radio" name="label" id="Important">
+                                                <label class="form-check-label line-height-1 fw-medium text-secondary-light text-sm d-flex align-items-center gap-1" for="Important">
+                                                    <span class="w-8-px h-8-px bg-info-600 rounded-circle"></span>
+                                                    Addendum
+                                                </label>
+                                            </div>
+                                            <div class="form-check checked-secondary d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="radio" name="label" id="Important">
+                                                <label class="form-check-label line-height-1 fw-medium text-secondary-light text-sm d-flex align-items-center gap-1" for="Important">
+                                                    <span class="w-8-px h-8-px bg-pink rounded-circle"></span>
+                                                  DPLH
                                                 </label>
                                             </div>
                                             <div class="form-check checked-secondary d-flex align-items-center gap-2">
                                                 <input class="form-check-input" type="radio" name="label" id="Important">
                                                 <label class="form-check-label line-height-1 fw-medium text-secondary-light text-sm d-flex align-items-center gap-1" for="Important">
                                                     <span class="w-8-px h-8-px bg-lilac-600 rounded-circle"></span>
-                                                    UKL-UPL
+                                                  DELH
+                                                </label>
+                                            </div>
+                                            <div class="form-check checked-secondary d-flex align-items-center gap-2">
+                                                <input class="form-check-input" type="radio" name="label" id="Important">
+                                                <label class="form-check-label line-height-1 fw-medium text-secondary-light text-sm d-flex align-items-center gap-1" for="Important">
+                                                    <span class="w-8-px h-8-px bg-lilac-600 rounded-circle"></span>
+                                                  UKL-UPL
                                                 </label>
                                             </div>
                                             {{-- <div class="form-check checked-danger d-flex align-items-center gap-2">

@@ -1,0 +1,162 @@
+[
+    {
+        "type": "news",
+        "date": "2024-12-11",
+        "title": "Pengenalan dan Uji Coba Aplikasi Perling untuk Mendukung Sistem Persetujuan Lingkungan",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Bogor, 11 Desember 2024 - Dalam upaya meningkatkan efisiensi sistem persetujuan lingkungan di Indonesia...",
+        "url": "/news/perling-uji-coba"
+    },
+    {
+        "type": "news",
+        "date": "2024-12-10",
+        "title": "Implementasi Sistem Monitoring Lingkungan Terbaru",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Jakarta, 10 Desember 2024 - Kementerian Lingkungan Hidup memperkenalkan sistem baru untuk monitoring kualitas lingkungan...",
+        "url": "/news/monitoring-lingkungan"
+    },
+    {
+        "type": "news",
+        "date": "2024-12-09",
+        "title": "Peresmian Pusat Data Lingkungan Hidup Nasional",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Jakarta, 9 Desember 2024 - Presiden meresmikan pusat data lingkungan hidup terbaru yang akan menjadi referensi nasional...",
+        "url": "/news/pusat-data-lingkungan"
+    },
+    {
+        "type": "news",
+        "date": "2024-12-07",
+        "title": "Workshop Pemanfaatan Aplikasi Perling untuk Pelaku Usaha",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Bandung, 7 Desember 2024 - KLHK mengadakan workshop untuk memperkenalkan fitur-fitur Perling kepada pelaku usaha...",
+        "url": "/news/workshop-perling"
+    },
+    {
+        "type": "news",
+        "date": "2024-12-05",
+        "title": "Kolaborasi Internasional dalam Pengelolaan Data Lingkungan",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Bali, 5 Desember 2024 - Indonesia menjalin kerja sama dengan beberapa negara ASEAN untuk pengelolaan data lingkungan...",
+        "url": "/news/kolaborasi-internasional"
+    },
+    {
+        "type": "news",
+        "date": "2024-12-03",
+        "title": "Inovasi Teknologi dalam Pengawasan Lingkungan",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Jakarta, 3 Desember 2024 - KLHK mengadopsi teknologi AI dan IoT untuk meningkatkan efektivitas pengawasan lingkungan...",
+        "url": "/news/inovasi-teknologi-lingkungan"
+    },
+    {
+        "type": "news",
+        "date": "2024-12-01",
+        "title": "Forum Diskusi Kebijakan Lingkungan Hidup 2025",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Surabaya, 1 Desember 2024 - Para pakar lingkungan berkumpul untuk membahas arah kebijakan lingkungan hidup tahun 2025...",
+        "url": "/news/forum-kebijakan-2025"
+    },
+    {
+        "type": "news",
+        "date": "2024-11-28",
+        "title": "Evaluasi Dampak Lingkungan Proyek Strategis Nasional",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Jakarta, 28 November 2024 - KLHK melakukan evaluasi menyeluruh terhadap dampak lingkungan dari proyek strategis nasional...",
+        "url": "/news/evaluasi-dampak-lingkungan"
+    },
+    {
+        "type": "news",
+        "date": "2024-11-25",
+        "title": "Penghargaan Perusahaan Ramah Lingkungan 2024",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Jakarta, 25 November 2024 - KLHK memberikan penghargaan kepada perusahaan-perusahaan yang konsisten menerapkan praktik ramah lingkungan...",
+        "url": "/news/penghargaan-ramah-lingkungan"
+    },
+    {
+        "type": "news",
+        "date": "2024-11-22",
+        "title": "Peluncuran Program Edukasi Lingkungan untuk Sekolah",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "description": "Yogyakarta, 22 November 2024 - KLHK bekerja sama dengan Kemendikbud meluncurkan program edukasi lingkungan untuk sekolah...",
+        "url": "/news/program-edukasi-lingkungan"
+    },
+    {
+        "type": "video",
+        "date": "2024-12-12",
+        "title": "Tutorial Lengkap Penggunaan Aplikasi Perling",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/perling-tutorial"
+    },
+    {
+        "type": "video",
+        "date": "2024-12-08",
+        "title": "Wawancara dengan Menteri LHK",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/wawancara-menteri"
+    },
+    {
+        "type": "video",
+        "date": "2024-12-06",
+        "title": "Webinar: Dampak Perubahan Iklim terhadap Keanekaragaman Hayati",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/webinar-perubahan-iklim"
+    },
+    {
+        "type": "video",
+        "date": "2024-12-04",
+        "title": "Dokumenter: Restorasi Hutan Mangrove Indonesia",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/dokumenter-mangrove"
+    },
+    {
+        "type": "video",
+        "date": "2024-12-01",
+        "title": "Diskusi Panel: Kebijakan Pengelolaan Limbah B3",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/diskusi-limbah-b3"
+    },
+    {
+        "type": "video",
+        "date": "2024-11-29",
+        "title": "Sosialisasi Peraturan Baru tentang Kualitas Udara",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/sosialisasi-kualitas-udara"
+    },
+    {
+        "type": "video",
+        "date": "2024-11-27",
+        "title": "Liputan Khusus: Inovasi Teknologi Ramah Lingkungan",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/inovasi-ramah-lingkungan"
+    },
+    {
+        "type": "video",
+        "date": "2024-11-24",
+        "title": "Workshop Virtual: Penggunaan Sistem Informasi Lingkungan",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/workshop-sistem-informasi"
+    },
+    {
+        "type": "video",
+        "date": "2024-11-21",
+        "title": "Dokumenter: Upaya Konservasi Spesies Langka Indonesia",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/konservasi-spesies"
+    },
+    {
+        "type": "video",
+        "date": "2024-11-19",
+        "title": "Panduan Praktis: Pengolahan Sampah Rumah Tangga",
+        "thumbnail": "https://s3.palapacloud.id/amdalnet/public/berita/_DEC2485.jpg",
+        "embedUrl": "https://www.youtube.com/embed/Mb93OtlApAQ?si=njiEfYKiv6SCQB_Z",
+        "url": "/videos/pengolahan-sampah"
+    }
+]

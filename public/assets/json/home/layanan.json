@@ -1,0 +1,83 @@
+{
+    "header": {
+        "title": "Daftar Pengumuman & Informasi",
+        "subtitle": "Daftar Pengumuman dan Informasi terkait kegiatan yang mengajukan izin lingkungan"
+    },
+    "tabs": [
+        { "id": "pertek", "label": "PERTEK" },
+        { "id": "rintek", "label": "RINTEK" },
+        { "id": "amdal", "label": "AMDAL" },
+        { "id": "addendum", "label": "Addendum" },
+        { "id": "ukl-upl", "label": "UKL - UPL" },
+        { "id": "audit", "label": "AUDIT" }
+    ],
+    "contents": {
+        "pertek": [
+            {
+                "title": "Kegiatan Penggalian Kuarsa/Pasir Kuarsa, LUKITO HARTONO LAWY",
+                "description": "Dampak Potensials: Penurunan Kualitas Udara, Peningkatan Kebisingan, Peningkatan Air Larian, Peningkatan Timbulan Sampah, Terjadinya Gangguan Lalu Lintas, Terbukanya Kes",
+                "link": "#",
+                "periode": "27 Maret - 10 April 2025"
+            },
+            {
+                "title": "Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W",
+                "description": "Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis",
+                "link": "#",
+                "periode": "26 Maret - 9 April 2025"
+            }
+        ],
+        "rintek": [
+            {
+                "title": "Test Penggalian Kuarsa/Pasir Kuarsa, LUKITO HARTONO LAWY",
+                "description": "Dampak Potensials: Penurunan Kualitas Udara, Peningkatan Kebisingan, Peningkatan Air Larian, Peningkatan Timbulan Sampah, Terjadinya Gangguan Lalu Lintas, Terbukanya Kes",
+                "link": "#",
+                "periode": "27 Maret - 10 April 2025"
+            },
+            {
+                "title": "Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W",
+                "description": "Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis",
+                "link": "#",
+                "periode": "26 Maret - 9 April 2025"
+            }
+        ],
+        "amdal": [
+            {
+                "title": "Kegiatan Penggalian Kuarsa/Pasir Kuarsa, LUKITO HARTONO LAWY",
+                "description": "Dampak Potensials: Penurunan Kualitas Udara, Peningkatan Kebisingan, Peningkatan Air Larian, Peningkatan Timbulan Sampah, Terjadinya Gangguan Lalu Lintas, Terbukanya Kes",
+                "link": "#",
+                "periode": "27 Maret - 10 April 2025"
+            },
+            {
+                "title": "Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W",
+                "description": "Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis",
+                "link": "#",
+                "periode": "26 Maret - 9 April 2025"
+            }
+        ],
+        "addendum": [
+            {
+                "title": "Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W",
+                "description": "Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis",
+                "link": "#",
+                "periode": "26 Maret - 9 April 2025"
+            }
+        ],
+        "ukl-upl": [
+            {
+                "title": "Pembangunan Waterfront Malalayang, TARCISIUS ASWIN JULIZAR, W",
+                "description": "Dampak Potensials: Pra Konstruksi 1. Persepsi Masyarakat Tahap Konstruksi 1. Peningkatan Kesempatan Kerja dan Berusaha 2. Peningkatan Sedimentasi 3. Perubahan Garis",
+                "link": "#",
+                "periode": "26 Maret - 9 April 2025"
+            }
+        ],
+        "audit": [
+            {
+                "no": 1,
+                "company": "PT PETROKIMIA GRESIK",
+                "title": "PENGUMUMAN AUDIT LINGKUNGAN HIDUP WAJIB BERKALA INDUSTRI PETROKIMIA",
+                "description": "PT Petrokimia Gresik merupakan Kegiatan pada sektor Industri Petrokimia : Industri Pupuk dan Bahan Kimia (Amonia, Pupuk, Asam Sulfat, Asam Fosfat, dan Asam Klorida)...",
+                "link": "#"
+            }
+        ]
+    }
+}
